@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mobile Project</string>
+
+    <!-- แก้ไข หรือเพิ่มหมวดหมู่ใหม่ -->
+    <string-array name="categories_array">
+        <item>ทั้งหมด</item>
+        <item>เครื่องดื่มให้พลังงาน</item>
+        <item>สมาร์ทโฟน</item>
+    </string-array>
+
+</resources>

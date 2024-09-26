@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_add_product" type="id" />
+    <item name="btn_show_product_data" type="id" />
+    <item name="btn_confirm" type="id" />
+</resources>

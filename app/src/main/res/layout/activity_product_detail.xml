@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ชื่อ UBU Market Center -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UBU Market Center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000" />
+
+        <!-- รูปภาพสินค้าใหญ่ -->
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="Product Image" />
+
+        <!-- ชื่อสินค้าและราคา -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="เรดบูล"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ราคา 50 บาท"
+                android:textSize="18sp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <!-- ประเภทสินค้า -->
+        <TextView
+            android:id="@+id/product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ประเภท: เครื่องดื่มให้พลังงาน"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- ขนาดสินค้า -->
+        <TextView
+            android:id="@+id/product_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ขนาด: 250 มิลลิลิตร"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- คุณสมบัติ -->
+        <TextView
+            android:id="@+id/product_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คุณสมบัติ:\n- ช่วยเพิ่มพลังงานและความสดชื่น\n- เพิ่มความตื่นตัวและสมาธิ"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- วิธีการบริโภค -->
+        <TextView
+            android:id="@+id/product_consumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วิธีการบริโภค: แนะนำให้ดื่ม 1 กระป๋องเมื่อรู้สึกเหนื่อยล้าหรือต้องการเพิ่มพลังงานทันที"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- คำเตือน -->
+        <TextView
+            android:id="@+id/product_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คำเตือน: ไม่เหมาะสำหรับเด็ก, ผู้ตั้งครรภ์, หรือผู้ที่มีความไวต่อคาเฟอีน"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ข้อมูลสมาร์ทโฟนเพิ่มเติม -->
+        <TextView
+            android:id="@+id/product_screen_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ขนาดหน้าจอ: 6.5 นิ้ว"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_processor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชิปประมวลผล: Qualcomm Snapdragon 8 Gen 1"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAM: 12 GB"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความจุ: 256 GB / 512 GB"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กล้อง: กล้องหลัง 12MP (3 เลนส์), กล้องหน้า 12MP"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="แบตเตอรี่: 5,000 mAh"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/product_os"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ระบบปฏิบัติการ: Android 13"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ปุ่มต่างๆ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <!-- ปุ่ม "เพิ่ม" -->
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="เพิ่ม"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ปุ่ม "ย้อนกลับ" -->
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ย้อนกลับ"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

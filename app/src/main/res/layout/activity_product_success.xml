@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ชื่อ UBU Market Center -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UBU Market Center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"
+        android:textColor="#000000" />
+
+    <!-- ข้อความ เพิ่มสินค้าเรียบร้อยแล้ว พร้อมสัญลักษณ์ถูก -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSuccessMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เพิ่มสินค้าเรียบร้อยแล้ว"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/success_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_check_circle"
+            android:visibility="visible" /> <!-- ไอคอนถูก -->
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" /> <!-- ไอคอนผิด ซ่อนอยู่ -->
+
+    </LinearLayout>
+
+    <!-- RecyclerView สำหรับแสดงรายการสินค้า -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+
+    <!-- ปุ่ม "สั่งซื้อ" -->
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="สั่งซื้อ"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- ปุ่ม "กลับไปหน้าแรก" (เพิ่มใหม่) -->
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="กลับไปยังหน้าแรกเพื่อเลือกสินค้าใหม่"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

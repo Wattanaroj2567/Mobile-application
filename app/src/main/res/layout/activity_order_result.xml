@@ -1,0 +1,57 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ชื่อ UBU Market Center -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UBU Market Center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000" />
+
+        <!-- ข้อความแจ้งการสั่งซื้อสำเร็จ -->
+        <TextView
+            android:id="@+id/tvOrderSuccessMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="การสั่งซื้อสินค้าสำเร็จแล้ว!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center" /> <!-- จัดให้อยู่ตรงกลาง -->
+
+        <!-- ข้อความแจ้งการสั่งซื้อไม่สำเร็จ (เพิ่มใหม่) -->
+        <TextView
+            android:id="@+id/tvOrderFailedMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="การสั่งซื้อไม่สำเร็จ\n\nไม่มีสินค้าในรายการ\nกรุณาทำรายการใหม่!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:visibility="gone" /> <!-- ซ่อนไว้ก่อน -->
+
+        <!-- ปุ่มกลับไปยังหน้าแรก -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="กลับไปหน้าแรก"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>
